@@ -5,3 +5,10 @@ body {
   margin: 0;
   padding: 20px;
 }
+.cv-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+}
