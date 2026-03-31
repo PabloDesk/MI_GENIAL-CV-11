@@ -128,35 +128,42 @@ footer {
   color: #64748b;
 }
 
-/* Estilos para la tabla */
-.cv-table {
+.cv-table { /* Estilos para la tabla con encabezado oscuro */
   width: 100%;
-  border-collapse: collapse; /* Elimina el espacio doble entre bordes */
+  border-collapse: collapse;
   margin-top: 15px;
-  background-color: #ffffff;
+  background-color: #ffffff; /* El cuerpo de la tabla sigue blanco para legibilidad */
+  overflow: hidden;
+  border-radius: 8px 8px 0 0; /* Redondea las esquinas superiores */
 }
 
 .cv-table th {
-  background-color: #e8f5e9; /* El mismo verde claro del fondo */
-  color: #1b5e20; /* Verde oscuro para el texto */
+  background-color: #1b5e20; /* Verde oscuro (oscuro y profesional) */
+  color: #ffffff;            /* Letras blancas */
   text-align: left;
-  padding: 12px;
-  border-bottom: 2px solid #66bb6a; /* Línea verde más fuerte para resaltar el encabezado */
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase; /* Hace que el encabezado resalte más */
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .cv-table td {
-  padding: 12px;
-  border-bottom: 1px solid #eee; /* Línea gris muy sutil para separar filas */
-  color: #444;
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
 }
 
-/* Efecto cebra: filas alternas con un toque de color */
-.cv-table tr:nth-child(even) {
-  background-color: #f9fbf9; 
+.cv-table tr:nth-child(even) { /* Fila alterna para que sea fácil de leer */
+  background-color: #f8fcf8; 
 }
 
-/* Efecto al pasar el mouse */
-.cv-table tr:hover {
+.cv-table tr:hover { /* Efecto al pasar el mouse */
+  background-color: #e8f5e9; /* El verde clarito de tu fondo */
+  transition: 0.2s;
+}
+
+.cv-table tr:hover { /* Efecto al pasar el mouse */
   background-color: #f1f8e9;
   transition: 0.3s;
 }
