@@ -23,30 +23,33 @@ header { /* 2. Cabecera (Header) */
 
 .header-top {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Centra todo el conjunto en la página */
   align-items: center;
-  gap: 60px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+  gap: 50px; /* Espacio entre el texto y la foto */
+  margin-bottom: 30px;
 }
 
 .nombre-titulo {
-  text-align: right;
+  text-align: right; /* Alinea el texto hacia la foto */
+  display: flex;
+  flex-direction: column; /* Apila el alias sobre el nombre */
+  justify-content: center;
 }
 
 .nombre-titulo h1 {
   margin: 0;
-  font-size: 48px; /* Tamaño consistente */
-  color: #22c55e;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  line-height: 1.1;
+  font-size: 42px;
+  color: #e2e8f0; /* Nombre en blanco/gris para elegancia */
+  line-height: 1;
 }
 
 .nickname {
-  font-size: 22px;
-  color: #94a3b8;
-  font-weight: 300;
+  color: #22c55e; /* Tu verde neón para el alias */
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .profile-img { /* 3. Imagen de Perfil */
