@@ -128,42 +128,34 @@ footer {
   color: #64748b;
 }
 
-.cv-table { /* Estilos para la tabla con encabezado oscuro */
+.cv-table { /* --- TABLA ESTILO "CYBER-NEÓN" --- */
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate; /* Cambiado para permitir esquinas redondeadas */
+  border-spacing: 0;
   margin-top: 15px;
-  background-color: #ffffff; /* El cuerpo de la tabla sigue blanco para legibilidad */
-  overflow: hidden;
-  border-radius: 8px 8px 0 0; /* Redondea las esquinas superiores */
+  background-color: #1a201a; /* Un tono más claro que el contenedor */
+  border-radius: 12px;
+  overflow: hidden; /* Corta el contenido para que respete el radio */
+  border: 1px solid #2a3b2a;
 }
 
 .cv-table th {
-  background-color: #1b5e20; /* Verde oscuro (oscuro y profesional) */
-  color: #ffffff;            /* Letras blancas */
+  background-color: #2a3b2a; /* Fondo oscuro gris-verde */
+  color: #4caf50;            /* Letras en verde neón */
   text-align: left;
-  padding: 15px;
+  padding: 18px;
   font-weight: bold;
-  text-transform: uppercase; /* Hace que el encabezado resalte más */
-  font-size: 14px;
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
 }
 
 .cv-table td {
-  padding: 12px 15px;
-  border-bottom: 1px solid #e0e0e0;
-  color: #333;
+  padding: 15px 18px;
+  border-bottom: 1px solid #2a3b2a; /* Líneas divisorias oscuras */
+  color: #ccccff; /* Texto azulado muy tenue para los datos */
 }
 
-.cv-table tr:nth-child(even) { /* Fila alterna para que sea fácil de leer */
-  background-color: #f8fcf8; 
-}
-
-.cv-table tr:hover { /* Efecto al pasar el mouse */
-  background-color: #e8f5e9; /* El verde clarito de tu fondo */
-  transition: 0.2s;
-}
-
-.cv-table tr:hover { /* Efecto al pasar el mouse */
-  background-color: #f1f8e9;
-  transition: 0.3s;
+.cv-table tr:nth-child(even) td { /* Fila alterna para modo oscuro */
+  background-color: #1e251e; 
 }
